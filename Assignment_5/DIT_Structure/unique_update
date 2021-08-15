@@ -1,0 +1,11 @@
+dn: uid=owend,ou=permanent,ou=staff,dc=ltacademy,dc=com
+objectClass: inetOrgPerson
+objectClass: top
+cn: Owend
+sn: Vincent
+employeeNumber: 040
+mail: owen.hudson@lt.com
+mobile: 94771111111
+street: London
+uid: owend
+userPassword: {SHA}fEqNCco3Yq9h5ZUglD3CZJT4lBs=

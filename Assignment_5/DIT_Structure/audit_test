@@ -1,0 +1,4 @@
+dn: uid=rohit,ou=permanent,ou=staff,dc=ltacademy,dc=com
+changetype: modify
+replace: employeeNumber
+employeeNumber: 046
