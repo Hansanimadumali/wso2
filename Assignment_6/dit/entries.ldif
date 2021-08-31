@@ -1,0 +1,95 @@
+# ROOT DN
+
+dn: dc=wso2-am, dc=com
+dc: wso2-am
+o: wso2-am
+objectclass: organization
+objectclass: dcObject
+
+# DIT Strucure
+
+dn: ou=staff,dc=wso2-am,dc=com
+objectclass: organizationalunit
+ou: staff
+description: Staff Members
+
+dn: ou=users,ou=staff,dc=wso2-am,dc=com
+objectclass: organizationalunit
+ou: users
+description: internal users
+
+dn: ou=groups,ou=staff,dc=wso2-am,dc=com
+objectclass: organizationalunit
+ou: groups
+
+# Users
+
+dn: uid=owen,ou=users,ou=staff,dc=wso2-am,dc=com
+objectClass: inetOrgPerson
+objectClass: top
+cn: Owen
+sn: Hudson
+employeeNumber: 0
+mail: owen.hudson@wso2-am.com
+mobile: 94771111111
+street: London
+uid: owen
+userPassword: {SSHA}T6ectbnVHTcY3iyutHm1CMwQ0gtiG0Ep
+
+dn: uid=rachel,ou=users,ou=staff,dc=wso2-am,dc=com
+objectClass: inetOrgPerson
+objectClass: top
+cn: Rachel
+sn: Burgess
+employeeNumber: 1
+mail: rachel.burgess@wso2-am.com
+mobile: 94771111112
+street: London
+uid: rachel
+userPassword: {SSHA}T6ectbnVHTcY3iyutHm1CMwQ0gtiG0Ep
+
+dn: uid=mary,ou=users,ou=staff,dc=wso2-am,dc=com
+objectClass: inetOrgPerson
+objectClass: top
+cn: Mary
+sn: Mathis
+employeeNumber: 2
+mail: mary.mathis@wso2-am.com
+mobile: 94771111113
+street: London
+uid: mary
+userPassword: {SSHA}T6ectbnVHTcY3iyutHm1CMwQ0gtiG0Ep
+
+dn: uid=molly,ou=users,ou=staff,dc=wso2-am,dc=com
+objectClass: inetOrgPerson
+objectClass: top
+cn: Molly
+sn: Vaughan
+employeeNumber: 3
+mail: molly.vaughan@wso2-am.com
+mobile: 94771111114
+street: London
+uid: molly
+userPassword: {SSHA}T6ectbnVHTcY3iyutHm1CMwQ0gtiG0Ep
+
+
+# Groups
+
+
+dn: cn=permanent,ou=groups,ou=staff,dc=wso2-am,dc=com
+objectClass: groupOfNames
+objectClass: top
+cn: permanent
+member: uid=owen,ou=users,ou=staff,dc=wso2-am,dc=com
+member: uid=rachel,ou=users,ou=staff,dc=wso2-am,dc=com
+
+
+dn: cn=contract,ou=groups,ou=staff,dc=wso2-am,dc=com
+objectClass: groupOfNames
+objectClass: top
+cn: contract
+member: uid=mary,ou=users,ou=staff,dc=wso2-am,dc=com
+member: uid=molly,ou=users,ou=staff,dc=wso2-am,dc=com
+
+
+
